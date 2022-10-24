@@ -25,11 +25,8 @@ class Anime_parser():
         all = soup.find("div", class_="news_box anime_cat")
         all_too = all.find_all("a")
         text = all_too[2].get_text()
-        link_1 = str(all_too[2]).split(" ")[1].split("=")[1].split(">")[0].split("/")
-        link = f"https://kg-portal.ru/news/anime/{link_1[1]}/{link_1[2]}"
         new = {
             "name": text,
-            "link": link,
             "set": "kg-portal.ru"
         }
         return new
