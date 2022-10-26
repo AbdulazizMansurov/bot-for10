@@ -7,7 +7,7 @@ class Marvel_News():
         soup = BeautifulSoup(req, "html.parser")
         last_news = soup.find("li", style="margin-bottom: 15px")
         name = last_news.find("a", class_="search_title").get_text()
-        link = "pluggedin.ru" + last_news.find("a").get("href")
+        link = "pluggedin.ru" + last_news.find("a", class_="search_title").get("href")
         new = {
             "name": name,
             "link": link,
