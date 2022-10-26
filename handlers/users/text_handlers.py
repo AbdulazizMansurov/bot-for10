@@ -15,7 +15,7 @@ def give_marvel_n(message: Message):
         while True:
             data = Marvel_News().show_marvel_new()
             if text != data["name"]:
-                mess = f"""<b>Новость!<b>\n{data["name"]}
+                mess = f"""<b>Новость!</b>\n{data["name"]}
 <a href="{data["link"]}">Подробная информация</a>
 Данные взяты с сайта {data["set"]}\n
 Спасибо что воспользовались нашим ботом!
