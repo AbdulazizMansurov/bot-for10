@@ -16,7 +16,7 @@ def give_marvel_n(message: Message):
             data = Marvel_News().show_marvel_new()
             if text != data["name"]:
                 mess = f"""<b>Новость!<b>\n{data["name"]}
-<a href="{data["link"]}">Подробная информация</a>"
+<a href="{data["link"]}">Подробная информация</a>
 Данные взяты с сайта {data["set"]}\n
 Спасибо что воспользовались нашим ботом!
 <a href="https://t.me/news_for_10_abdu_bot">Бот Абдулазиза</a>
@@ -32,7 +32,7 @@ def give_marvel_n(message: Message):
             if text != data["name"]:
                 mess = f"""<b>Новость!</b>\n
 {data["name"]}
-<a href="{data["link"]}">Подробная информация</a>"
+<a href="{data["link"]}">Подробная информация</a>
 Данные взяты с сайта {data["set"]}\n
 Спасибо что воспользовались нашим ботом!
 <a href="https://t.me/news_for_10_abdu_bot">Бот Абдулазиза</a>"""
@@ -47,7 +47,7 @@ def give_marvel_n(message: Message):
             if text != data["name"]:
                 mess = f"""<b>Новость!</b>\n
 {data["name"]}
-<a href="{data["link"]}">Подробная информация</a>"
+<a href="{data["link"]}">Подробная информация</a>
 Данные взяты с сайта {data["set"]}\n
 Спасибо что воспользовались нашим ботом!
 <a href="https://t.me/news_for_10_abdu_bot">Бот Абдулазиза</a>"""
