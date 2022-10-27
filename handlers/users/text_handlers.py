@@ -23,7 +23,7 @@ def give_marvel_n(message: Message):
 """
                 bot.send_message(chat_id, mess, reply_markup=return_to_main_menu())
                 text = data["name"]
-                time.sleep(60)
+                time.sleep(100)
 
     elif message.text == "Anime":
         bot.send_message(chat_id, "Новость подбирается...", reply_markup=ReplyKeyboardRemove())
@@ -38,7 +38,7 @@ def give_marvel_n(message: Message):
 <a href="https://t.me/news_for_10_abdu_bot">Бот Абдулазиза</a>"""
                 bot.send_message(chat_id, mess, reply_markup=return_to_main_menu())
                 text = data["name"]
-                time.sleep(60)
+                time.sleep(100)
 
     elif message.text == "Genshin impact":
         bot.send_message(chat_id, "Новость подбирается...", reply_markup=ReplyKeyboardRemove())
@@ -53,7 +53,7 @@ def give_marvel_n(message: Message):
 <a href="https://t.me/news_for_10_abdu_bot">Бот Абдулазиза</a>"""
                 bot.send_message(chat_id, mess, reply_markup=return_to_main_menu())
                 text = data["name"]
-                time.sleep(60)
+                time.sleep(100)
 
 
 @bot.callback_query_handler(func=lambda call: call.data=="rtr_tm")
